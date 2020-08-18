@@ -1,3 +1,46 @@
+## [1.9.1] - 05-Aug-2020
+* Fix bug "Bad UTF-8 encoding found while decoding string". Closes #47
+
+## [1.9.0] - 05-Aug-2020
+* Added support for Flutter v1.20
+
+## [1.8.3] - 15-Jun-2020
+* Fixed bug in checking whether `maxChips` has been reached.
+* Fix `setState called on disposed widget`
+
+## [1.8.2] - 14-Jun-2020
+* Added `autofocus` feature. Closes #41
+* Allow user-entered text to be edited when chip is deleted with keyboard. Closes #38
+* Attempt to fix hover issue in suggestion box items for Flutter Web. Fixes #30
+* When TextInputAction (e.g Done) is tapped on Keyboard, select first suggestion. Fixes #21
+* Fixed bug where when keyboard is dismissed and focus retained, keyboard couldn't come back
+* Show overlay above field if more space available. Closes #24
+
+## [1.8.1] - 24-Apr-2020
+* Attempt to ensure to ensure field always visible. Closes #25
+* Also fixed issue when overlay position doesn't adjust with field height.
+
+## [1.8.0] - 13-Apr-2020
+* Fixed bug: `The non-abstract class 'ChipsInputState' is missing implementations for these members: - TextInputClient.showAutocorrectionPromptRect` in Flutter >= 1.18.* on channel master.
+* Fix bug where focus is lost when user selects option. Closes [#32](https://github.com/danvick/flutter_chips_input/issues/32)
+ 
+## [1.7.0] - 15-Jan-2020
+* Fixed bug: `The non-abstract class 'ChipsInputState' is missing implementations` in Flutter >= 1.13.*. Closes [#27](https://github.com/danvick/flutter_chips_input/issues/27)
+* Fix text overflow. Closes[#18](https://github.com/danvick/flutter_chips_input/issues/18). Thanks to [artembakhanov](https://github.com/artembakhanov)
+
+## [1.6.1] - 05-Dec-2019
+* Deprecated `onChipTapped` function.
+
+## [1.6.0] - 06-Nov-2019
+* Removed unused/unimplemented attribute `onChipTapped`.
+
+## [1.5.3] - 06-Nov-2019
+* Reintroduced `onChipTapped` to avoid breaking changes.
+
+## [1.5.2] - 06-Nov-2019
+* Implemented `TextInputClient`'s `connectionClosed()` method override - compatibility with Flutter versions > 1.9 
+* Remove unused/unimplemented attribute `onChipTapped`. Closes [#22](https://github.com/danvick/flutter_chips_input/issues/22)
+
 ## [1.5.1] - 02-Oct-2019
 * Fix setEditingState error. Close #16
 
