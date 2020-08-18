@@ -460,4 +460,9 @@ class ChipsInputState<T> extends State<ChipsInput<T>>
       ),
     );
   }
+
+  @override
+  void performPrivateCommand(String action, Map<String, dynamic> data) {
+  }
+
 }
